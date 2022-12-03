@@ -9,7 +9,9 @@
 		"test": "cypress run",
 		"test:old": "CYPRESS_GHOST_OLD_VERSION=true cypress run",
 		"test:both": "npm run test:old; npm run test",
-		"test:headed": "cypress run --headed"
+		"test:headed": "cypress run --headed",
+		"test:browsers": "cypress run --browser chrome; CYPRESS_GHOST_OLD_VERSION=true cypress run --browser firefox",
+		"test:firefox": " CYPRESS_GHOST_OLD_VERSION=true cypress run --browser firefox"
 	},
 	"author": "",
 	"license": "ISC",
